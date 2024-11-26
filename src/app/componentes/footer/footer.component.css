@@ -1,0 +1,26 @@
+
+#fondo{
+    height: 120px;
+   width: 100%;
+   
+}
+#pie{
+   height: 70px;
+   width: 100%;
+
+}
+.row{
+   padding-top: 2%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h5,h6,a{
+   color:white ;
+   text-decoration: none;
+   
+}
+
+
+

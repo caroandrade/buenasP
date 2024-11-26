@@ -1,0 +1,34 @@
+
+.list_group{
+
+    list-style-type: none;
+}
+
+.nav{
+  
+    border: none;
+    
+  }
+  .btn {
+      
+      padding: 0.5em 0.5em;
+      font-weight: 600;
+      color: white;
+      background-color: #000f9f;
+     
+      margin-left: 1%;
+      border: solid #000f9f;
+   }
+  
+  .btn:focus {
+      background-color: white;
+      color: #000f9f;
+      border-color:  #000f9f;
+  }
+  
+  
+  .texto{
+      margin-top: 4%;
+    font-size: x-large;
+   
+  } 

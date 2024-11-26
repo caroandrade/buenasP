@@ -1,0 +1,155 @@
+<div class="container" alt="muestra el listado de recursos">
+  <h1>Recursos</h1>
+  <div class="row">
+    <div class="col">
+      <div class="container">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active btn"
+              id="nav-modalidad-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-modalidad"
+              type="button"
+              role="tab"
+              aria-controls="nav-modalidad"
+              aria-selected="true"
+            >
+              Niveles y Modalidades
+            </button>
+            <button
+              class="nav-link btn"
+              id="nav-espacio-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-espacio"
+              type="button"
+              role="tab"
+              aria-controls="nav-espacio"
+              aria-selected="false"
+            >
+              Espacio Curricular
+            </button>
+            <button
+              class="nav-link btn"
+              id="nav-programa-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-programa"
+              type="button"
+              role="tab"
+              aria-controls="nav-programa"
+              aria-selected="false"
+            >
+              Programas/ Tipo de Práctica
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-modalidad|"
+            role="tabpanel"
+            aria-labelledby="nav-modalidad-tab"
+          >
+            <div class="list-group">
+              <a
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+                ><button type="button" (click)="numero('87')">Inicial</button>
+              </a>
+              <a class="list-group-item list-group-item-action">
+                <button type="button" (click)="numero('79')">Primario</button>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action"
+                >Secundario</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Técnica y Trabajo</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Adultos</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Educación Especial</a
+              >
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-espacio"
+            role="tabpanel"
+            aria-labelledby="nav-espacio-tab"
+          >
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+              >
+                Matemática
+              </a>
+              <a href="#" class="list-group-item list-group-item-action"
+                >Lengua</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Ciencias Naturales</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Ciencias Sociales</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Educación Artística</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Educación Física</a
+              >
+
+              <a href="#" class="list-group-item list-group-item-action"
+                >Lenguas Extranjeras</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Comunicación</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Tecnología</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Fromación Técnica Específica</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Práctica Profesionalizante</a
+              >
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-programa"
+            role="tabpanel"
+            aria-labelledby="nav-programa-tab"
+          >
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+              >
+                Cultura del Cuidado
+              </a>
+              <a href="#" class="list-group-item list-group-item-action"
+                >Fluidez Lectora</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Tipo de práctica: ABP</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Tipo de práctica: Fluidez Lectora</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <app-listado [idCat]="idCat"></app-listado>
+    </div>
+  </div>
+</div>
